@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment Confirmation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main style="text-align: center; padding: 3rem;">
+    <h2 id="message"></h2>
+    <p>Thank you for using FastPay!</p>
+    <a href="index.html">Go Back to Home</a>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const status = params.get("status");
+    const method = params.get("method");
+    const message = document.getElementById("message");
+
+    if (status === "success") {
+      message.textContent = `Payment via ${method} was successful!`;
+    } else {
+      message.textContent = "Payment failed. Please try again.";
+    }
+  </script>
+</body>
+</html>

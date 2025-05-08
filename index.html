@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secure Payment</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Company Logo" class="logo" />
+    <h1>FastPay Services</h1>
+  </header>
+
+  <main>
+    <h2>Select a Payment Method</h2>
+    <div class="payment-options">
+      <button onclick="redirectTo('google')">Pay with Google Pay</button>
+      <button onclick="redirectTo('paytm')">Pay with Paytm</button>
+      <button onclick="redirectTo('phonepe')">Pay with PhonePe</button>
+      <button onclick="redirectTo('razorpay')">Pay with Razorpay</button>
+    </div>
+
+    <div class="qr-section">
+      <h3>Or scan to pay</h3>
+      <img src="qr.png" alt="QR Code to Pay" class="qr-code" />
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FastPay Inc. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
