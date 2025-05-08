@@ -2,7 +2,7 @@ function redirectTo(method) {
   let url;
   switch (method) {
     case "google":
-      url = "upi://pay?pa=ismarttarun1-1@okicici&pn=Spy%20Agent&am=1&cu=INR";  // Corrected UPI link format
+      url = "upi://pay?pa=ismarttarun1-1@okicici&pn=Veluru%20Sai%20Tarun&am=1&cu=INR";  // Corrected UPI link format
       break;
     case "paytm":
       url = "upi://pay?pa=example@upi&pn=FastPay&am=100&cu=INR";  // Corrected UPI link format
