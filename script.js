@@ -2,7 +2,7 @@ function redirectTo(method) {
   let url;
   switch (method) {
     case "google":
-      url = "https://pay.google.com/gp/p/ui/pay?pa=ismarttarun1-1@okicici&pn=Spy Agent&am=1";
+      upi = "https://pay.google.com/gp/p/ui/pay?pa=ismarttarun1-1@okicici&pn=Spy Agent&am=1";
       break;
     case "paytm":
       url = "https://paytm.com/pay?pa=example@upi&pn=FastPay&am=100";
